@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-color: #e36ad9;
+    --secondary-color: radial-gradient(circle at 90.12% 2.18%, #ff9bb4 0, #ff93ba 8.33%, #ff8ac0 16.67%, #ff82c6 25%, #ff79cc 33.33%, #f571d3 41.67%, #e36ad9 50%, #ce65df 58.33%, #b562e6 66.67%, #9962ed 75%, #7563f3 83.33%, #3d66f8 91.67%, #0069fd 100%);
+    --tercer-color: #9962ed;
+    --cuart-color:rgb(245, 243, 243);
+}
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.data{
+    min-width: 500px;
+    min-height: 600px;
+    width: 20%;
+    height: 60%;
+    background-color: var(--cuart-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 60px;
+
+}
+.searchContainer{
+    min-width: 500px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.idsearch{
+    height: 30px;
+    width: 200px;
+    border: rgb(192, 161, 189) solid .5px;
+   border-radius: 3px;
+   padding: 15px;
+   font-size: 15px;
+}
+.idsearchbtn{
+    height: 30px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+   border-radius: 3px;
+   background: #ff82c6;
+   margin-left: 40px;
+   font-size: 15px;
+   transition: .4s;
+   color: white;
+}
+.idsearchbtn:hover{
+    background: var(--tercer-color);
+}
+.idsearchbtn:active{
+   background: var(--primary-color);
+   border: var(--cuart-color) solid 1px;
+}
